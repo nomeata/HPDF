@@ -217,7 +217,7 @@ instance PdfObject PDFDictionary where
                                                                     ]
                                                                        
           in 
-           M.foldWithKey convertItem mempty a
+           M.foldrWithKey convertItem mempty a
   
 instance PdfLengthInfo PDFDictionary where
 
